@@ -33,5 +33,6 @@ while keep_playing:
     play = input('Do you want to have another go?')
     if play.casefold() == 'n':
         keep_playing = False
+        print('Goodbye thanks for playing')
         break
 
