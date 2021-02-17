@@ -30,9 +30,11 @@ while keep_playing:
     else:
         print('This is an odd number')
 
-    play = input('Do you want to have another go?')
+    play = input('Do you want to have another go? Type Y or N')
     if play.casefold() == 'n':
         keep_playing = False
         print('Goodbye thanks for playing')
+    elif play.casefold() != 'n' and play.casefold() != 'y':
+        keep_playing = False
+        print('Goodbye thanks for playing')
         break
-
