@@ -10,11 +10,11 @@ Finally, when the user eventually guesses the right number you congratulate them
 
 
 '''
-
+import random
 print('Let us play guess a number. The range will be between 1 and 50')
 
 attempts = 0
-number = 23
+number = random.randint(1,50)
 keep_playing = True
 
 while keep_playing:
@@ -25,7 +25,7 @@ while keep_playing:
             print('You have guessed outside of the range please choose a number between 1 and 50')
             #break
         elif guess == number:
-            print('You guess correctly after {} '.format(attempts))
+            print('You guess correctly after {} attempts'.format(attempts))
         elif guess != number:
             print('You are incorrect try again')
     except ValueError:
